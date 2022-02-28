@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    background-color: #F39C12 ;
+    font-family: 'Mulish', sans-serif;
+}
+header{
+    background-color: #F39C12 ;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__img{
+    width: 220px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.header__menu{
+    margin-right: 20px;
+    margin-top: 8px;
+    font-weight:  bolder;
+}
+.header__menu ul{
+    display: none;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -14px;
+}
+.header__menu:hover ul, ul:hover{
+    display: block;
+}
+.header__menu li {
+    margin: 10px 0px;
+}
+.header__menu li a {
+    color: black;
+    text-decoration: none;
+}
+.header__menu li a:hover {
+    text-decoration: underline;
+}
+.header__menu--profile{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.header__menu--profile img{
+    margin-right: 8px;
+    width: 60px;
+}
+.header__menu--profile p{
+    margin-right: 0px;
+}
+.main{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__title{
+    color: black;
+    font-size: 25px;
+}
+.input{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid black;
+    border-radius: 30px;
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+}
+::placeholder{
+    color: black;
+}
+.carousel{
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+}
+.carousel__container{
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+.carousel-item{
+    background-color: black;
+    width: 200px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 430ms all;
+    transform-origin: center left;
+    position: relative;
+}
+.carousel-item:hover ~ .carousel-item{
+    transform: translate3d(100px, 0, 0);
+}
+.carousel__container:hover .carousel-item{
+    opacity: 0.3;
+}
+.carousel__container:hover .carousel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+.carousel-item__img { 
+    width: 200px;
+    height: 280px;
+}
+.carousel-item__details{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%,rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.cartas1{
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+}
+.carousel-item__details p {
+    margin: 2px 0px;
+  }
+  
+  .carousel-item:hover .carousel-item__details {
+    opacity: 1;
+  }
+  
+  .carousel-item__details--icons img {
+    height: 25px;
+    width: 25px;
+  }
+  
+  /* --------------------------------------- */
+  /* -- estilo de imput nombre entrenador -- */
+  /* --------------------------------------- */
+  
+  .input {
+    /* sacar linea azul cuando hago click */
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid black;
+    /* redondear brode */
+    border-radius: 15px;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 35px;
+    /* quitar el coso de arriba, y alejar un toq al texto de dentro pal costao */
+    padding: 0px 20px;
+    /* altura relativa segun la paguina */
+    width: 70%;
+  }
+  
+  /* --------------------------------------- */
+  /* --               FOOTER              -- */
+  /* --------------------------------------- */
+  
+  .footer {
+  
+    background-color: #F39C12;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+  
+  }
+  .footer a{
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  ::placeholder {
+    color: black;
+  }
+  
+  /* --PARA OCULTAR LOS SCROLS--  */
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
